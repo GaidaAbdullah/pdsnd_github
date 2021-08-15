@@ -146,8 +146,8 @@ def trip_duration_stats(df):
     trip_sum = round(df['Trip Duration'].sum(), 2)
     trip_mean = round(df['Trip Duration'].mean(), 2)
     # print the results to the user.
-    print('the total travel time is:', trip_sum, 'minutes')
-    print('the mean of travel time is:', trip_mean, 'minutes')
+    print('The Total Travel Time is:', trip_sum, 'minutes')
+    print('The Mean of Travel Time is:', trip_mean, 'minutes')
 
     # check if the [Gender, Birth Year] columns exist, otherwise show an error message.
     if 'Gender' in df.columns and 'Birth Year' in df.columns:
