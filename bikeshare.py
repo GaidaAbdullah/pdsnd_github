@@ -69,8 +69,8 @@ def load_data(city, month, day):
         df = df[month_cond]
     # if the user did not choose all days of the week, filter the dataframe with the chosen day.
     if day != 'all':
-        day_cond = df['Start Time'].dt.day_name() == day.capitalize()
-        df = df[day_cond]
+        day_condition = df['Start Time'].dt.day_name() == day.capitalize()
+        df = df[day_condition]
     # return the dataframe after it got loaded with the filtered data.
     return df
 
